@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tra cứu vận đơn | Nam Thái Logistics</title>
+  <meta name="description" content="Tra cứu trạng thái vận đơn tại Nam Thái Logistics. Nhập mã vận đơn để xem hành trình hàng hóa và tình trạng giao nhận." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Tra cứu vận đơn</h1>
+    <p>Kiểm tra nhanh trạng thái lô hàng bằng mã vận đơn trên trang chuyên biệt.</p>
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Tra cứu vận đơn</span></div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">Tra cứu</span>
+      <h2>Nhập mã vận đơn</h2>
+      <div class="title-bar"></div>
+      <p>Nhập mã vận đơn của bạn để kiểm tra tình trạng hiện tại của lô hàng. Nếu cần hỗ trợ, liên hệ ngay hotline.</p>
+    </div>
+    <div style="background:var(--gray);border-radius:22px;padding:32px;box-shadow:0 24px 60px rgba(14,37,79,.06)">
+      <form id="trackWaybillForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="waybillCode">Mã vận đơn</label>
+            <input type="text" id="waybillCode" placeholder="Nhập mã vận đơn..." />
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-search"></i> Tra cứu</button>
+          <button type="button" class="btn btn-outline btn-lg" onclick="location.href='contact.html'">Liên hệ hỗ trợ</button>
+        </div>
+      </form>
+      <div id="waybillResult" style="margin-top:22px;display:none;padding:18px;border-radius:14px;background:#fff;color:var(--text);font-size:14px"></div>
+    </div>
+  </div>
+</section>
+
+<script src="js/components.js"></script>
+<script>injectRootLayout('');</script>
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
